@@ -7,6 +7,7 @@
 
 std::string anagram(std::string CandidateString)
 {
+    std::sort(CandidateString.begin(),CandidateString.end());
     std::string result=""; 
     do
     {
@@ -16,7 +17,7 @@ std::string anagram(std::string CandidateString)
     return result;
 }
 
-int main(int argc, char* agrv[])
+int main(int argc, char* argv[])
 {
     std::cout << anagram("ABCD") << std::endl;
     return EXIT_SUCCESS;
