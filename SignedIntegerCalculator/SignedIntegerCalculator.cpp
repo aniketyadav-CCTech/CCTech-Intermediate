@@ -1,3 +1,7 @@
+// Design a calculator for integer values
+// Implement a calculator that will handle addition, subtraction, multiplication and division operations
+//  for both signed and unsigned integers.
+
 #include <float.h>
 #include <iostream>
 #include <iomanip>
