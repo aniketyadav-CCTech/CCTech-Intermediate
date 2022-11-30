@@ -21,9 +21,9 @@ std::string removeExtension(const std::string& file_name)   // remove extension 
 std::string removeSeparators(std::string file_name) // removing separatoes e.g, _ - .
 {
     char chars[] = {'_','-','.'};
-    for(int i = 0; i < sizeof(chars); ++i)
+    for(char ch:chars)
     {
-    auto t = remove(file_name.begin(),file_name.end(),chars[i]);
+    auto t = remove(file_name.begin(),file_name.end(),ch);
     file_name.erase(t,file_name.end());
     }
     return file_name;
