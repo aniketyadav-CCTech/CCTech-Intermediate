@@ -1,0 +1,4 @@
+bcda
+abdc
+abcd
+badc

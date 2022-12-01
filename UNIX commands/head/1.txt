@@ -1,0 +1,17 @@
+==> text.txt <==
+bcda
+abdc
+abcd
+badc
+cctech
+pune
+wakad
+hinjewadi
+mulshi
+chinchwad
+
+==> text1.txt <==
+bcda
+abdc
+abcd
+badc
