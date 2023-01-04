@@ -3,9 +3,9 @@
 #include <map>
 #include <string>
 
-const unsigned int COLA_MAX_CAPACITY    = 100;
-const unsigned int CHIPS_MAX_CAPACITY   = 200;
-const unsigned int CANDY_MAX_CAPACITY   = 300;
+const unsigned int COLA_MAX_CAPACITY    = 1;
+const unsigned int CHIPS_MAX_CAPACITY   = 2;
+const unsigned int CANDY_MAX_CAPACITY   = 3;
 const unsigned int COLA_PRICE           = 100;
 const unsigned int CHIPS_PRICE          = 50;
 const unsigned int CANDY_PRICE          = 65;

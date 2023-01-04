@@ -55,7 +55,7 @@ namespace vendingmachine
             else
             {
                 std::cout << "Please Collect your " << quantity << " " << _item->getItemName() << std::endl;
-                for(auto item:inventry.)
+                if((biller.insertedAmount - _item->getCost() * quantity)!=0)
                 std::cout << "Please collect remaining " << biller.insertedAmount - _item->getCost() * quantity << " cents" << std::endl;
                 biller.setInsrtedAmount(0);
             }

@@ -52,10 +52,13 @@ int main(int argc, char *argv[])
             std::cin >> colaQuantity;
             if (std::cin.fail() || colaQuantity > inventry.available_cola)
                 std::cout << "Invalid Quantity" << std::endl;
-
-            vendingmachine::Cola cola;
-            biller.returnChange(&cola, colaQuantity, biller);
-
+            else if(colaQuantity > inventry.available_cola)
+                std::cout << "Out of Stock";
+            else
+            {
+                vendingmachine::Cola cola;
+                biller.returnChange(&cola, colaQuantity, biller);
+            }
             break;
         }
 
@@ -66,9 +69,12 @@ int main(int argc, char *argv[])
             std::cin >> chipsQuantity;
             if (std::cin.fail() || chipsQuantity > inventry.available_chips)
                 std::cout << "Invalid Quantity" << std::endl;
-
-            vendingmachine::Chips chips;
-            biller.returnChange(&chips, chipsQuantity, biller);
+            else if(chipsQuantity > inventry.available_chips)
+                std::cout << "Out of Stock";
+            else{
+                vendingmachine::Chips chips;
+                biller.returnChange(&chips, chipsQuantity, biller);
+            }
             break;
         }
 
@@ -77,11 +83,14 @@ int main(int argc, char *argv[])
             unsigned int candyQuantity = 0;
             std::cout << "Enter quantity for Cola...";
             std::cin >> candyQuantity;
-            if (std::cin.fail() || candyQuantity > inventry.available_candy)
+            if (std::cin.fail())
                 std::cout << "Invalid Quantity" << std::endl;
-
-            vendingmachine::Candy candy;
-            biller.returnChange(&candy, candyQuantity, biller);
+            else if(candyQuantity > inventry.available_candy)
+                std::cout << "Out of Stock";
+            else{
+                vendingmachine::Candy candy;
+                biller.returnChange(&candy, candyQuantity, biller);
+            }
             break;
         }
 
